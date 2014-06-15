@@ -11,14 +11,13 @@ var svg = d3.select('body').append('svg')
   .attr({
     width : Game.width,
     height : Game.height
-  }).append('g');
-  // .attr("transform", "translate(32,"+ (Game.height / 2) + ")");
+  });
+
 
 //Player is rectangle
 //Corresponds to a single object
 //Has initial position at height/2 width/2
-//new position = new mouse click ps
-//
+//new position = new mouse click ps\
 var playerData = [{
   x: Game.width/2,
   y: Game.height/2,
@@ -176,13 +175,6 @@ function update(someData) {
 //check for collisions
   //looks for distance between enemy and player
     // if distance less than enemy.r + player.r -> COLLISION!
-    //
-
-
-
-
-
-
 
 
 // The initial display.
